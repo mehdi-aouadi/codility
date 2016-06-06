@@ -1,7 +1,7 @@
 using System;
 class Solution {
     public int solution(int N) {
-        int 	result 		= 0;					// Final result : Binary Gap Lenght
+        int 	result 		= 0;					// Final result : Max Binary Gap Lenght
 	int 	count 		= 0;					// Temporary binary gap count
         int 	index 		= 0;					// Iterations index
         int 	lastOccurence 	= 0;					// Index of the last occurence of 1
@@ -10,11 +10,11 @@ class Solution {
 	// Retrieving the last position of 1 (No need to go further)
         lastOccurence 	= Array.LastIndexOf(binary, '1');
         
-	// Exit if there is only one 1 OR if there is no zero
+	// Exit if there is only one 1 OR if there is no zeros
         if((lastOccurence == 0) || Array.IndexOf(binary, '0') == -1)
             return result;
 			
-        //Iterating while the last 1 is not hit
+        //Iterating while the last 1 is not reached
         while(index < lastOccurence)
         {
 		index++;
