@@ -1,3 +1,2 @@
 # codility
-Solutions to Codility programming challenges and tasks
-https://codility.com/programmers/lessons/
+Solutions to <a href="https://codility.com/programmers/lessons/">Codility</a> programming challenges and tasks
